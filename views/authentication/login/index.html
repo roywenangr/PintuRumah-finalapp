@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body>
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="auth row">
+            <div class="col p-0">
+                <div class="auth-content position-relative d-flex flex-column align-items-start justify-content-center text-start">
+                    <div class="navbar-auth position-absolute d-none d-md-flex align-items-center">
+                        <img src="../../../assets/image/brand/brand-logo.svg" alt="Brand Logo" height="42px">
+                    </div>
+                    <h2 class="title w-100" style="margin-bottom: 6px;">Selamat Datang</h2>
+                    <p class="description w-100" style="margin-bottom: 32px;">Halo ! Silahkan masukkan data kalian.</p>
+                    <form class="form d-flex flex-column gap-2 align-items-center w-100" style="margin-bottom: 32px;">
+                        <div class="form-input d-flex flex-column gap-2 w-100" style="margin-bottom: 8px;">
+                            <label for="email">Email</label>
+                            <input type="email" class="input" id="email" placeholder="contoh@gmail.com">
+                        </div>
+                        <div class="form-input d-flex flex-column gap-2 w-100">
+                            <label for="password">Kata Sandi</label>
+                            <input type="password" class="input" id="password" placeholder="Masukkan Kata Sandi">
+                        </div>
+                        <button type="button" class="button-redirect text-center" style="margin-bottom: 8px;">Lupa Password?</button>
+                        <label class="switch w-100 d-flex align-items-center gap-2" style="margin-bottom: 8px;">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                            <p>Saya Pemilik Properti</p>
+                        </label>
+                        <a href="../../homepage/main-page/index-login.html" id="button-submit" class="button-primary w-100 text-center">Masuk</a>
+                        <button type="button" class="button-outline w-100 text-center d-flex align-items-center gap-2 justify-content-center">
+                            <img src="../../../assets/image/social-media/google-color.svg" alt="Google Icon" width="24">
+                            Lanjutkan dengan Google
+                        </button>
+                    </form>
+                    <p class="link-redirect text-center w-100">Belum punya akun? <a href="../signup/index.html">Silahkan daftar</a></p>
+                </div>
+            </div>
+            <div class="col-5 d-none d-lg-inline-block p-0">
+                <img src="../../../assets/image/page-authentication/banner.svg" alt="Banner Image" class="img-fluid banner-auth">
+            </div>
+        </section>
+    </main>
+    <!-- END MAIN CONTENT -->
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        const buttonSubmit = document.querySelector('#button-submit')
+        const inputCheckbox = document.querySelector('label.switch input')
+
+        inputCheckbox.addEventListener('change', function() {
+            if (inputCheckbox.checked) {
+                buttonSubmit.setAttribute('href', '../../dashboard-staff/index.html')
+            } else {
+                buttonSubmit.setAttribute('href', '../../homepage/main-page/index-login.html')
+            }
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

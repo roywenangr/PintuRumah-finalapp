@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Payment | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="dashboard">
+    <!-- SIDEBAR -->
+    <div class="sidebar d-flex flex-column justify-content-between">
+        <div class="sidebar-header d-flex flex-column gap-4">
+            <div class="header-brand d-flex align-items-center justify-content-between gap-3">
+                <a href="../../dashboard-staff/index.html" class="sidebar-brand w-100">
+                    <span class="brand-logo"></span>
+                </a>
+                <i class="fa-regular fa-circle-left" style="font-size: 1rem; opacity: 0.62;"></i>
+            </div>
+            <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+                <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="../../dashboard-staff/vacant/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="vacant-icon"></span>
+                    <span>Daftar Properti</span>
+                </a>
+                <a href="../../dashboard-staff/tenancy/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="tenancy-icon"></span>
+                    <span>Penyewa / Pembeli</span>
+                </a>
+                <a href="../../dashboard-staff/payment/index.html" class="sidebar-item active d-flex gap-1 align-items-center">
+                    <span class="payment-icon"></span>
+                    <span>Kelola Pembayaran</span>
+                </a>
+                <a href="../../dashboard-staff/message/empty-state.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="message-icon"></span>
+                    <span>Pesan</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+            <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="info-icon"></span>
+                <span>Bantuan</span>
+            </a>
+            <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="setting-icon"></span>
+                <span>Pengaturan</span>
+            </a>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- TOPBAR -->
+    <div class="topbar d-flex justify-content-between align-items-center">
+        <h4 class="topbar-title">Beranda</h4>
+        <div class="topbar-group d-flex gap-3 align-items-center">
+            <hr>
+            <div class="topbar-button topbar-button-login d-none d-lg-flex gap-2 align-items-center position-relative">
+                <button class="button-login d-flex gap-2 align-items-center position-relative">
+                    <img src="../../../assets/image/profile/profile-image.svg" alt="Profile Image" width="32">
+                    Roy WR
+                </button>
+                <div class="button-popup d-flex flex-column gap-2">
+                    <a href="../../dashboard-staff/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                    <a href="../../authentication/login/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- DASHBOARD CONTENT -->
+    <div class="dashboard-content dashboard d-flex">
+        <div class="content content-full">
+            <div class="row pb-4">
+                <div class="col-12">
+                    <div class="card-content d-flex align-items-center gap-3 justify-content-between">
+                        <div class="content-data w-100 d-flex align-items-center gap-3 justify-content-center">
+                            <img src="../../../assets/image/dashboard/income-colorfull.svg" alt="Income Icon" width="42">
+                            <div class="wrapper d-flex flex-column gap-1">
+                                <p>Total Pendapatan</p>
+                                <h3>IDR 198 Juta <span>+$235</span></h3>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="content-data w-100 d-flex align-items-center gap-3 justify-content-center">
+                            <img src="../../../assets/image/dashboard/tenant-colorfull.svg" alt="Tenant Icon" width="42">
+                            <div class="wrapper d-flex flex-column gap-1">
+                                <p>Penyewa Properti</p>
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="content-data w-100 d-flex align-items-center gap-3 justify-content-center">
+                            <img src="../../../assets/image/dashboard/buyer-colorfull.svg" alt="Buyer Icon" width="42">
+                            <div class="wrapper d-flex flex-column gap-1">
+                                <p>Pembeli Properti</p>
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 mt-4">
+                    <div class="card-content">
+                        <div class="content-chart d-flex align-items-end justify-content-between">
+                            <div class="wrapper d-flex flex-column gap-1">
+                                <p>Pendapatan Bulanan</p>
+                                <h3>IDR 18.299.000 <span>+10.6%</span></h3>
+                            </div>
+                            <div class="button-group d-flex gap-1">
+                                <button type="button" class="d-flex align-items-center justify-content-center">D</button>
+                                <button type="button" class="d-flex align-items-center justify-content-center">W</button>
+                                <button type="button" class="d-flex align-items-center justify-content-center active">M</button>
+                                <button type="button" class="d-flex align-items-center justify-content-center">Y</button>
+                            </div>
+                        </div>
+                        <img src="../../../assets/image/dashboard/chart-payment.svg" alt="Chart Image" class="img-fluid mt-5 w-100">
+                    </div>
+                    <div class="card-content content-history mt-4">
+                        <h6>Histori Pembayaran</h6>
+                        <table class="table">
+                            <tr>
+                                <th scope="col">Tagihan</th>
+                                <th scope="col">Tanggal Transaksi</th>
+                                <th scope="col">Klien</th>
+                                <th scope="col">Jumlah Pembayaran</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>PRS-32590</p>
+                                </td>
+                                <td>
+                                    <p>Dec 18, 2025</p>
+                                </td>
+                                <td>
+                                    <p class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/profile/profile-image-8.svg" alt="Profile Image" width="28">
+                                        Yusuf Reigen
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>IDR 18.299.000</p>
+                                </td>
+                                <td>
+                                    <span class="badge-danger">Belum Lunas</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>PRJ-46891</p>
+                                </td>
+                                <td>
+                                    <p>Dec 6, 2021</p>
+                                </td>
+                                <td>
+                                    <p class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/profile/profile-image-9.svg" alt="Profile Image" width="28">
+                                        Kevin Jonas
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>IDR 180.299.000</p>
+                                </td>
+                                <td>
+                                    <span class="badge-success">Lunas</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>PRS-37517</p>
+                                </td>
+                                <td>
+                                    <p>Nov 18, 2025</p>
+                                </td>
+                                <td>
+                                    <p class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/profile/profile-image-8.svg" alt="Profile Image" width="28">
+                                        Yusuf Reigen
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>IDR 18.299.000</p>
+                                </td>
+                                <td>
+                                    <span class="badge-success">Lunas</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="content-aside position-relative">
+                        <img src="../../../assets/image/dashboard/oval-primary.svg" alt="Oval Image" class="oval-primary">
+                        <img src="../../../assets/image/dashboard/oval-primary-dark.svg" alt="Oval Image" class="oval-primary-dark">
+                        <div class="aside-data h-100 d-flex flex-column justify-content-between align-items-center position-relative">
+                            <div class="wrapper">
+                                <span class="d-flex align-items-center gap-2">
+                                    <img src="../../../assets/image/icon/sparkle-primary.svg" alt="Sparkle Icon" width="16">
+                                    PRO
+                                </span>
+                                <h6>Streamline your process</h6>
+                                <p>All rent payments are deposited automatically into your bank account within 24 hours.</p>
+                            </div>
+                            <button type="button" class="button-primary-small w-100 d-flex justify-content-center">Upgrade Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END DASHBOARD CONTENT -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.querySelector('.button-login').addEventListener('click', function() {
+            document.querySelector('.button-popup').classList.toggle('active')
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

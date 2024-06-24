@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notification Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-tenancy d-flex align-items-center justify-content-between">
+        <a href="../dashboard-staff/index.html" class="tenancy-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-chevron-left" style="font-size: 0.913rem;"></i>
+            Kembali ke Dashboard
+        </a>
+        <div class="tenancy-image w-100">
+            <img src="../../assets/image/brand/brand-logo.svg" alt="Brand Logo" height="42">
+        </div>
+    </div>
+    <!-- END NAVBAR -->
+
+
+    <!-- SIDEBAR -->
+    <div class="sidebar-tenancy d-none d-xl-flex flex-column align-items-center justify-content-center gap-2">
+        <a href="index.html" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-user"></i>
+            Profil
+        </a>
+        <a href="account.html" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-circle-user"></i>
+            Akun Saya
+        </a>
+        <a href="notification.html" class="sidebar-button active w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-bell"></i>
+            Notifikasi
+        </a>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <section class="tenancy-form profile-form container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-xl-5">
+                    <div class="content-form pb-5">
+                        <div class="form-content">
+                            <h5 class="content-title mb-3">Notifikasi</h5>
+                            <form class="form row">
+                                <div class="col-12 mb-3 content-data pb-4 d-flex align-items-start gap-3 justify-content-between" style="border-bottom: 1px solid rgba(var(--dark-color), 0.12);">
+                                    <div class="wrapper">
+                                        <h6>Umum</h6>
+                                        <p>Dapatkan notifikasi dari PintuRumah untuk mendapatkan informasi terbaru.</p>
+                                    </div>
+                                    <label class="switch d-flex align-items-center gap-2" style="margin-bottom: 8px;">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="col-12 mb-3 content-data pb-4" style="border-bottom: 1px solid rgba(var(--dark-color), 0.12);">
+                                    <h6>Pengingat Sewa</h6>
+                                    <div class="form-input d-flex align-items-center gap-2 w-100 mt-3">
+                                        <input type="checkbox" id="pengingat">
+                                        <label for="pengingat" style="font-size: 0.85rem;">Ketika tanggal jatuh tempo sewa penyewa Anda semakin dekat</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 content-data pb-4" style="border-bottom: 1px solid rgba(var(--dark-color), 0.12);">
+                                    <h6>Pembayaran</h6>
+                                    <div class="form-input d-flex align-items-center gap-2 w-100 mt-3">
+                                        <input type="checkbox" id="pembayaran_1">
+                                        <label for="pembayaran_1" style="font-size: 0.85rem;">Ketika pembayaran penyewa terlambat</label>
+                                    </div>
+                                    <div class="form-input d-flex align-items-center gap-2 w-100 mt-1">
+                                        <input type="checkbox" id="pembayaran_2">
+                                        <label for="pembayaran_2" style="font-size: 0.85rem;">Notifikasi tentang Pembayaran</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 content-data pb-4" style="border-bottom: 1px solid rgba(var(--dark-color), 0.12);">
+                                    <h6>Buletin Email</h6>
+                                    <div class="form-input d-flex flex-column gap-2 w-100 mt-3">
+                                        <div class="input-radio d-flex gap-3">
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="ya">
+                                                <label for="ya">Nyala</label>
+                                            </div>
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="no">
+                                                <label for="no">Mati</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button type="button" class="button-primary-small">Simpan Perubahan</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

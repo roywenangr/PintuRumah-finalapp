@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Favorite Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="dashboard">
+    <!-- SIDEBAR -->
+    <div class="sidebar d-flex flex-column justify-content-between">
+        <div class="sidebar-header d-flex flex-column gap-4">
+            <div class="header-brand d-flex align-items-center justify-content-between gap-3">
+                <a href="../index.html" class="sidebar-brand w-100">
+                    <span class="brand-logo"></span>
+                </a>
+                <i class="fa-regular fa-circle-left" style="font-size: 1rem; opacity: 0.62;"></i>
+            </div>
+            <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+                <a href="../index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="../submission/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="submission-icon"></span>
+                    <span>Pengajuan</span>
+                </a>
+                <a href="../favorite/index.html" class="sidebar-item active d-flex gap-1 align-items-center">
+                    <span class="favorite-icon"></span>
+                    <span>Favorit</span>
+                </a>
+                <a href="../message/empty-state.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="message-icon"></span>
+                    <span>Pesan</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+            <a href="../index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="info-icon"></span>
+                <span>Bantuan</span>
+            </a>
+            <a href="../index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="setting-icon"></span>
+                <span>Pengaturan</span>
+            </a>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- TOPBAR -->
+    <div class="topbar d-flex justify-content-between align-items-center">
+        <h4 class="topbar-title">Favorit</h4>
+        <div class="topbar-group d-flex gap-3 align-items-center">
+            <div class="input-search position-relative">
+                <input type="search" class="topbar-input position-relative" placeholder="Cari Properti">
+                <img src="../../../assets/image/icon/search-primary.svg" alt="Search Icon" width="16">
+            </div>
+            <hr>
+            <div class="topbar-button topbar-button-login d-none d-lg-flex gap-2 align-items-center position-relative">
+                <button class="button-login d-flex gap-2 align-items-center position-relative">
+                    <img src="../../../assets/image/profile/profile-image.svg" alt="Profile Image" width="32">
+                    Bimabem
+                </button>
+                <div class="button-popup d-flex flex-column gap-2">
+                    <a href="../../dashboard-admin/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                    <a href="../../authentication/login/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- DASHBOARD CONTENT -->
+    <div class="dashboard-content dashboard d-flex">
+        <div class="content content-favorite pb-4">
+            <div class="favorite-header d-flex align-items-center justify-content-between">
+                <select>
+                    <option value="">Perlihatkan Semua</option>
+                    <option value="">Semua</option>
+                    <option value="">Berdasarkan Harga</option>
+                    <option value="">Berdasarkan Rating</option>
+                </select>
+                <div class="wrapper d-flex justify-content-end gap-2 w-100 align-items-center">
+                    <select>
+                        <option value="">Berdasarkan Tanggal</option>
+                        <option value="">Hari Ini</option>
+                        <option value="">Minggu Ini</option>
+                        <option value="">Bulan Ini</option>
+                        <option value="">Tahun Ini</option>
+                    </select>
+                    <button type="button" class="button-small d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-arrow-up-wide-short" style="font-size: 0.875rem;"></i>
+                    </button>
+                    <button type="button" class="button-small d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-border-all" style="font-size: 0.875rem;"></i>
+                    </button>
+                    <button type="button" class="button-small active d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-bars-staggered" style="font-size: 0.875rem;"></i>
+                    </button>
+                    <button type="button" class="button-danger d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-trash-can" style="font-size: 0.875rem;"></i>
+                        Hapus Semua
+                    </button>
+                </div>
+            </div>
+            <div class="favorite-property row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 content-gap">
+                <div class="col">
+                    <a href="../../homepage/detail-property/index-login.html" class="card-property">
+                        <div class="wrapper-image position-relative">
+                            <img src="../../../assets/image/page-main/property/property-1.jpg" alt="Property Image" class="img-fluid w-100 position-relative" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <img src="../../../assets/image/icon/batch-popular.svg" alt="Batch Popular" width="112" class="batch-popular">
+                        </div>
+                        <div class="wrapper">
+                            <div class="wrapper d-flex align-items-center justify-content-between">
+                                <h4>25 Juta <span>/bulan</span></h4>
+                                <div class="wrapper-like d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-heart" style="font-size: 1.125rem; color: rgba(var(--primary-color), 1);"></i>
+                                </div>
+                            </div>
+                            <h3>Palm Harbor</h3>
+                            <p>2699 Green Valley, Highland Lake, FL</p>
+                            <div class="scroll-wrapper">
+                                <div class="wrapper d-flex gap-3 align-items-center">
+                                    <span>
+                                        <img src="../../../assets/image/icon/bed-primary.svg" alt="Room Icon" width="16">
+                                        3 Kamar
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                        2 Kamar Mandi
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                        5x7 m²
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../../homepage/detail-property/index-login.html" class="card-property">
+                        <div class="wrapper-image position-relative">
+                            <img src="../../../assets/image/page-main/property/property-2.jpg" alt="Property Image" class="img-fluid w-100 position-relative" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <img src="../../../assets/image/icon/batch-popular.svg" alt="Batch Popular" width="112" class="batch-popular">
+                        </div>
+                        <div class="wrapper">
+                            <div class="wrapper d-flex align-items-center justify-content-between">
+                                <h4>35 Juta <span>/bulan</span></h4>
+                                <div class="wrapper-like d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-heart" style="font-size: 1.125rem; color: rgba(var(--primary-color), 1);"></i>
+                                </div>
+                            </div>
+                            <h3>Beverly Springfield</h3>
+                            <p>2821 Lake Sevilla, Palm Harbor, TX</p>
+                            <div class="scroll-wrapper">
+                                <div class="wrapper d-flex gap-3 align-items-center">
+                                    <span>
+                                        <img src="../../../assets/image/icon/bed-primary.svg" alt="Room Icon" width="16">
+                                        4 Kamar
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                        2 Kamar Mandi
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                        6x7.5 m²
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../../homepage/detail-property/index-login.html" class="card-property">
+                        <div class="wrapper-image position-relative">
+                            <img src="../../../assets/image/page-main/property/property-3.jpg" alt="Property Image" class="img-fluid w-100 position-relative" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <img src="../../../assets/image/icon/batch-popular.svg" alt="Batch Popular" width="112" class="batch-popular">
+                        </div>
+                        <div class="wrapper">
+                            <div class="wrapper d-flex align-items-center justify-content-between">
+                                <h4>55 Juta <span>/bulan</span></h4>
+                                <div class="wrapper-like d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-heart" style="font-size: 1.125rem; color: rgba(var(--primary-color), 1);"></i>
+                                </div>
+                            </div>
+                            <h3>Faulkner Ave</h3>
+                            <p>909 Woodland St, Michigan, IN</p>
+                            <div class="scroll-wrapper">
+                                <div class="wrapper d-flex gap-3 align-items-center">
+                                    <span>
+                                        <img src="../../../assets/image/icon/bed-primary.svg" alt="Room Icon" width="16">
+                                        4 Kamar
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                        3 Kamar Mandi
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                        8x10 m²
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../../homepage/detail-property/index-login.html" class="card-property">
+                        <div class="wrapper-image position-relative">
+                            <img src="../../../assets/image/page-main/property/property-4.jpg" alt="Property Image" class="img-fluid w-100 position-relative" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <img src="../../../assets/image/icon/batch-popular.svg" alt="Batch Popular" width="112" class="batch-popular">
+                        </div>
+                        <div class="wrapper">
+                            <div class="wrapper d-flex align-items-center justify-content-between">
+                                <h4>30 Juta <span>/bulan</span></h4>
+                                <div class="wrapper-like d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-heart" style="font-size: 1.125rem; color: rgba(var(--primary-color), 1);"></i>
+                                </div>
+                            </div>
+                            <h3>St. Crystal</h3>
+                            <p>210 US Highway, Highland Lake, FL</p>
+                            <div class="scroll-wrapper">
+                                <div class="wrapper d-flex gap-3 align-items-center">
+                                    <span>
+                                        <img src="../../../assets/image/icon/bed-primary.svg" alt="Room Icon" width="16">
+                                        4 Kamar
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                        2 Kamar Mandi
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                        6x8 m²
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../../homepage/detail-property/index-login.html" class="card-property">
+                        <div class="wrapper-image position-relative">
+                            <img src="../../../assets/image/page-main/property/property-5.jpg" alt="Property Image" class="img-fluid w-100 position-relative" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <img src="../../../assets/image/icon/batch-popular.svg" alt="Batch Popular" width="112" class="batch-popular">
+                        </div>
+                        <div class="wrapper">
+                            <div class="wrapper d-flex align-items-center justify-content-between">
+                                <h4>20 Juta <span>/bulan</span></h4>
+                                <div class="wrapper-like d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-heart" style="font-size: 1.125rem; color: rgba(var(--primary-color), 1);"></i>
+                                </div>
+                            </div>
+                            <h3>Cove Red</h3>
+                            <p>243 Curlew Road, Palm Harbor, TX</p>
+                            <div class="scroll-wrapper">
+                                <div class="wrapper d-flex gap-3 align-items-center">
+                                    <span>
+                                        <img src="../../../assets/image/icon/bed-primary.svg" alt="Room Icon" width="16">
+                                        2 Kamar
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                        1 Kamar Mandi
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                        5x7.5 m²
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../../homepage/detail-property/index-login.html" class="card-property">
+                        <div class="wrapper-image position-relative">
+                            <img src="../../../assets/image/page-main/property/property-6.jpg" alt="Property Image" class="img-fluid w-100 position-relative" style="border-top-left-radius: 6px; border-top-right-radius: 6px;">
+                            <img src="../../../assets/image/icon/batch-popular.svg" alt="Batch Popular" width="112" class="batch-popular">
+                        </div>
+                        <div class="wrapper">
+                            <div class="wrapper d-flex align-items-center justify-content-between">
+                                <h4>18 Juta <span>/bulan</span></h4>
+                                <div class="wrapper-like d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-heart" style="font-size: 1.125rem; color: rgba(var(--primary-color), 1);"></i>
+                                </div>
+                            </div>
+                            <h3>Tarpon Bay</h3>
+                            <p>103 Lake Shores, Michigan, IN</p>
+                            <div class="scroll-wrapper">
+                                <div class="wrapper d-flex gap-3 align-items-center">
+                                    <span>
+                                        <img src="../../../assets/image/icon/bed-primary.svg" alt="Room Icon" width="16">
+                                        3 Kamar
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                        1 Kamar Mandi
+                                    </span>
+                                    <span>
+                                        <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                        5x7 m²
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="favorite-pagination d-flex gap-1 align-items-center justify-content-center w-100" style="margin-top: 52px;">
+                <div class="group-item mx-3">
+                    <i class="fa-solid fa-chevron-left" style="font-size: 0.813rem;"></i>
+                </div>
+                <p class="active">1</p>
+                <p>2</p>
+                <p>3</p>
+                <div class="group-item mx-3">
+                    <i class="fa-solid fa-chevron-right" style="font-size: 0.813rem;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END DASHBOARD CONTENT -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.querySelector('.button-login').addEventListener('click', function() {
+            document.querySelector('.button-popup').classList.toggle('active')
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

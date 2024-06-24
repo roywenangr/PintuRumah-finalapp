@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Create Property Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="mb-5 pb-5">
+    <!-- NAVBAR -->
+    <div class="navbar-tenancy d-flex align-items-center justify-content-between">
+        <a href="../../dashboard-staff/vacant/index.html" class="tenancy-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-chevron-left" style="font-size: 0.913rem;"></i>
+            Kembali ke Dashboard
+        </a>
+        <div class="tenancy-image w-100">
+            <img src="../../../assets/image/brand/brand-logo.svg" alt="Brand Logo" height="42">
+        </div>
+    </div>
+    <!-- END NAVBAR -->
+
+
+    <!-- SIDEBAR -->
+    <div class="sidebar-tenancy d-none d-xl-flex flex-column align-items-center justify-content-center gap-2">
+        <button type="button" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-regular fa-folder-closed"></i>
+            Pengajuan
+            <i class="fa-solid fa-check" style="width: 100%; text-align: end; color: rgba(112, 101, 240, 1);"></i>
+        </button>
+        <button type="button" class="sidebar-button active w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-house-user"></i>
+            Daftar Informasi
+        </button>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <section class="tenancy-form container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="content-header">
+                        <h2 class="title text-center w-100" style="margin-bottom: 6px;">Tambah Properti</h2>
+                        <p class="description text-center">Pastikan Anda telah mengisi semua kolom yang diperlukan dan telah mengunggah semua file yang diperlukan.</p>
+                    </div>
+                    <div class="content-form">
+                        <div class="form-address d-flex align-items-center gap-3">
+                            <img src="../../../assets/image/icon/dashboard-dark.svg" alt="Dashboard Icon" width="56">
+                            <div class="wrapper d-flex flex-column gap-1">
+                                <h6>Alamat Properti</h6>
+                                <p>Jalan Kaliurang, Sleman, Yogyakarta</p>
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <h5 class="content-title mb-3">Informasi Properti</h5>
+                            <form class="form row">
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="tipe">Tipe Properti*</label>
+                                        <select class="input w-100" id="tipe">
+                                            <option value="">Pilih Tipe</option>
+                                            <option value="">Rumah</option>
+                                            <option value="">Apartemen</option>
+                                            <option value="">Rumah Kavling</option>
+                                            <option value="">Asrama / Kamar / Perumahan Siswa</option>
+                                            <option value="">Lainnya</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="kamar_tidur">Kamar Tidur*</label>
+                                        <select class="input w-100" id="kamar_tidur">
+                                            <option value="">Berapa Kamar</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="kamar_mandi">Kamar Mandi*</label>
+                                        <select class="input w-100" id="kamar_mandi">
+                                            <option value="">Berapa Kamar Mandi</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="luas_tanah">Luas Tanah</label>
+                                        <input type="text" class="input" id="luas_tanah" placeholder="sq ft">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="sewa_bulan">Sewa Perbulan*</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1" style="width: 20%; font-size: 0.875rem; opacity: 0.62;">IDR</span>
+                                            <input id="sewa_bulan" type="text" class="input" aria-describedby="basic-addon1" style="width: 80%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="uang_keamanan" class="d-flex align-items-center gap-2">
+                                            Uang Keamanan /bulan
+                                            <img src="../../../assets/image/icon/info-primary.svg" alt="Info Icon">
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon2" style="width: 20%; font-size: 0.875rem; opacity: 0.62;">IDR</span>
+                                            <input id="uang_keamanan" type="text" class="input" aria-describedby="basic-addon2" style="width: 80%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="description">Pilih Fasilitas*</label>
+                                        <div class="checkbox-list d-flex flex-column gap-4">
+                                            <div class="list-button d-flex flex-wrap gap-2 w-100">
+                                                <button type="button" class="button-facility active">A/C</button>
+                                                <button type="button" class="button-facility">Gudang</button>
+                                                <button type="button" class="button-facility active">Pet Friendly</button>
+                                                <button type="button" class="button-facility active">Parkir</button>
+                                                <button type="button" class="button-facility">Kolam Renang</button>
+                                                <button type="button" class="button-facility">Taman</button>
+                                                <button type="button" class="button-facility">Jacuzzi</button>
+                                                <button type="button" class="button-facility active">Fitnes</button>
+                                                <button type="button" class="button-facility">Jacuzzi</button>
+                                            </div>
+                                            <button type="button" class="button-link d-flex align-items-center gap-2">
+                                                <i class="fa-solid fa-plus"></i>
+                                                Tambah Fasilitas
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="description">Deskripsi*</label>
+                                        <textarea class="input" id="description" rows="4" placeholder="Tuliskan deskripsi tentang properti anda!"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="date">Tanggal Tersedia</label>
+                                        <input type="date" class="input" id="date" placeholder="01/01/2025">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="durasi">Durasi Sewa</label>
+                                        <select class="input w-100" id="durasi">
+                                            <option value="">Pilih Durasi</option>
+                                            <option value="">1 bulan</option>
+                                            <option value="">2 bulan</option>
+                                            <option value="">3 bulan</option>
+                                            <option value="">4 bulan</option>
+                                            <option value="">5 bulan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="content-footer d-flex gap-2 justify-content-end">
+                        <a href="form-1.html" class="button-outline">Kembali</a>
+                        <a href="../vacant/index.html" class="button-primary">Tambah Properti</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        const buttonFacility = document.querySelectorAll('.button-facility')
+        buttonFacility.forEach(button => {
+            button.addEventListener('click', function() {
+                button.classList.toggle('active')
+            })
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

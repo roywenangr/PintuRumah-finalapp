@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Create Property Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="mb-5 pb-5">
+    <!-- NAVBAR -->
+    <div class="navbar-tenancy d-flex align-items-center justify-content-between">
+        <a href="../../dashboard-staff/vacant/index.html" class="tenancy-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-chevron-left" style="font-size: 0.913rem;"></i>
+            Kembali ke Dashboard
+        </a>
+        <div class="tenancy-image w-100">
+            <img src="../../../assets/image/brand/brand-logo.svg" alt="Brand Logo" height="42">
+        </div>
+    </div>
+    <!-- END NAVBAR -->
+
+
+    <!-- SIDEBAR -->
+    <div class="sidebar-tenancy d-none d-xl-flex flex-column align-items-center justify-content-center gap-2">
+        <button type="button" class="sidebar-button active w-100 d-flex align-items-center gap-2">
+            <i class="fa-regular fa-folder-closed"></i>
+            Pengajuan
+        </button>
+        <button type="button" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-house-user"></i>
+            Daftar Informasi
+        </button>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <section class="tenancy-form container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="content-header">
+                        <h2 class="title text-center w-100" style="margin-bottom: 6px;">Tambah Properti</h2>
+                        <p class="description text-center">Pastikan Anda telah mengisi semua kolom yang diperlukan dan telah mengunggah semua file yang diperlukan.</p>
+                    </div>
+                    <div class="content-form">
+                        <div class="form-content">
+                            <h5 class="content-title mb-3">Alamat Properti</h5>
+                            <form class="form row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="alamat">Alamat Lengkap*</label>
+                                        <input type="text" class="input" id="alamat" placeholder="Masukkan Alamat">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="nomor">Nomor Rumah</label>
+                                        <input type="text" class="input" id="nomor" placeholder="Nomor Rumah">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="kota">Kota*</label>
+                                        <input type="text" class="input" id="kota" placeholder="Nama Kota">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="provinsi">Provinsi*</label>
+                                        <select class="input w-100" id="provinsi">
+                                            <option value="">Pilih Provinsi</option>
+                                            <option value="">Florida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="pos">Kode Pos*</label>
+                                        <input type="text" class="input" id="pos" placeholder="Kode Pos">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label class="d-flex align-items-center gap-2">
+                                            Peran Sebagai
+                                            <img src="../../../assets/image/icon/info-primary.svg" alt="">
+                                        </label>
+                                        <div class="input-radio d-flex gap-3">
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="ya">
+                                                <label for="ya">Pemilik Properti</label>
+                                            </div>
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="no">
+                                                <label for="no">Wakil Pemilik Properti</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="content-footer">
+                        <a href="form-2.html" class="button-primary text-center" style="width: 300px;">Lanjutkan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

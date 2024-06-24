@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Vacant | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="dashboard">
+    <!-- SIDEBAR -->
+    <div class="sidebar d-flex flex-column justify-content-between">
+        <div class="sidebar-header d-flex flex-column gap-4">
+            <div class="header-brand d-flex align-items-center justify-content-between gap-3">
+                <a href="../../dashboard-staff/index.html" class="sidebar-brand w-100">
+                    <span class="brand-logo"></span>
+                </a>
+                <i class="fa-regular fa-circle-left" style="font-size: 1rem; opacity: 0.62;"></i>
+            </div>
+            <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+                <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="../../dashboard-staff/vacant/index.html" class="sidebar-item active d-flex gap-1 align-items-center">
+                    <span class="vacant-icon"></span>
+                    <span>Daftar Properti</span>
+                </a>
+                <a href="../../dashboard-staff/tenancy/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="tenancy-icon"></span>
+                    <span>Penyewa / Pembeli</span>
+                </a>
+                <a href="../../dashboard-staff/payment/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="payment-icon"></span>
+                    <span>Kelola Pembayaran</span>
+                </a>
+                <a href="../../dashboard-staff/message/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="message-icon"></span>
+                    <span>Pesan</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+            <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="info-icon"></span>
+                <span>Bantuan</span>
+            </a>
+            <a href="../../dashboard-staff/message/empty-state.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="setting-icon"></span>
+                <span>Pengaturan</span>
+            </a>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- TOPBAR -->
+    <div class="topbar d-flex justify-content-between align-items-center">
+        <h4 class="topbar-title">Daftar Properti</h4>
+        <div class="topbar-group d-flex gap-3 align-items-center">
+            <a href="../create-property/form-1.html" class="button-primary-small d-flex align-items-center gap-2">
+                <i class="fa-solid fa-plus" style="font-size: 0.875rem;"></i>
+                Tambah Properti
+            </a>
+            <hr>
+            <div class="topbar-button topbar-button-login d-none d-lg-flex gap-2 align-items-center position-relative">
+                <button class="button-login d-flex gap-2 align-items-center position-relative">
+                    <img src="../../../assets/image/profile/profile-image.svg" alt="Profile Image" width="32">
+                    Roy WR
+                </button>
+                <div class="button-popup d-flex flex-column gap-2">
+                    <a href="../../dashboard-staff/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                    <a href="../../authentication/login/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- DASHBOARD CONTENT -->
+    <div class="dashboard-content dashboard d-flex gap-0 ps-0">
+        <div class="aside-list-vacant">
+            <div class="vacant-header">
+                <div class="wrapper d-flex align-items-center justify-content-between">
+                    <h6 class="header-title d-flex align-items-center gap-2">Properties <span>8</span></h6>
+                    <i class="fa-solid fa-arrow-up-wide-short"></i>
+                </div>
+                <div class="input-search position-relative mt-4">
+                    <input type="search" class="topbar-input position-relative w-100" placeholder="Cari Properti...">
+                    <img src="../../../assets/image/icon/search-primary.svg" alt="Search Icon" width="16">
+                </div>
+            </div>
+            <div class="vacant-list">
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-3.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Seturan</h6>
+                            <p class="profile-description">Seturan, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-success mb-1">Terjual</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-5.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 2</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-warning mb-1">Tersedia</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-2.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 1</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-primary mb-1">Tersewa</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-1.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 3</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-warning mb-1">Tersedia</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-4.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 4</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-danger mb-1">Dinonaktifkan</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-6.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 5</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-warning mb-1">Tersedia</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-6.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 5</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-warning mb-1">Tersedia</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+                <div class="list-item d-flex align-items-center gap-3 justify-content-between">
+                    <div class="item-profile d-flex align-items-center gap-2">
+                        <img src="../../../assets/image/page-main/property/property-6.jpg" alt="Property Image" class="property-image">
+                        <div class="wrapper">
+                            <h6 class="profile-title">Rumah Jakal 5</h6>
+                            <p class="profile-description">Jakal, Sleman, Yogyakarta</p>
+                        </div>
+                    </div>
+                    <div class="item-other d-flex flex-column align-items-end justify-content-between">
+                        <span class="badge-warning mb-1">Tersedia</span>
+                        <p>128 sq m</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content content-detail-vacant">
+            <img src="../../../assets/image/page-main/property/property-2.jpg" alt="Property Image" class="property-thumbnail">
+            <div class="detail-info">
+                <div class="info-header d-flex align-items-center justify-content-between gap-3">
+                    <div class="wrapper">
+                        <h4 class="info-title">Rumah Jakal 1</h4>
+                        <p class="info-description">Jakal, Sleman, Yogyakarta</p>
+                    </div>
+                    <button type="button" class="button-date d-flex gap-2 align-items-center">
+                        <i class="fa-regular fa-calendar"></i>
+                        Lihat Tanggal Tersedia
+                    </button>
+                </div>
+                <div class="info-value d-flex align-items-center gap-3 justify-content-between">
+                    <div class="value d-flex flex-column gap-2 align-items-start">
+                        <p>Kamar Tidur</p>
+                        <h6 class="d-flex align-items-center gap-2">
+                            <img src="../../../assets/image/icon/bed-dark-blur.svg" alt="Bed Icon" width="18">
+                            4
+                        </h6>
+                    </div>
+                    <div class="value d-flex flex-column gap-2 align-items-start">
+                        <p>Luas Ruang Tamu</p>
+                        <h6 class="d-flex align-items-center gap-2">
+                            <img src="../../../assets/image/icon/size-dark-blur.svg" alt="Size Icon" width="18">
+                            6x7.5 m²
+                        </h6>
+                    </div>
+                    <div class="value d-flex flex-column gap-2 align-items-start">
+                        <p>Tahun Pembangunan</p>
+                        <h6 class="d-flex align-items-center gap-2">
+                            <img src="../../../assets/image/icon/date-dark-blur.svg" alt="Size Icon" width="17">
+                            2018
+                        </h6>
+                    </div>
+                    <div class="value d-flex flex-column gap-2 align-items-start">
+                        <p>Permintaan</p>
+                        <h6 class="d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-note-sticky" style="font-size: 1rem; opacity: 0.62;"></i>
+                            12
+                        </h6>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 32px;">
+                    <div class="col-8">
+                        <div class="info-detail">
+                            <h6 class="detail-title">Kamar Tidur Tersedia</h6>
+                            <p class="detail-description">Total Kamar Tidur Tersedia</p>
+                            <div class="progress-group d-flex flex-column gap-2">
+                                <progress max="100" value="50"></progress>
+                                <div class="wrapper d-flex align-items-center justify-content-between w-100">
+                                    <p>2 Kamar tersedia dari 4 Kamar</p>
+                                    <p>50%</p>
+                                </div>
+                            </div>
+                            <h6 class="detail-title mt-4">Description</h6>
+                            <p class="detail-description">Rumah Di jakal lorem ipsum</p>
+                            <button type="button" class="button-link mt-5">Show more</button>
+                            <h6 class="detail-title mt-4">Equipment</h6>
+                            <div class="category-group d-flex flex-wrap gap-2">
+                                <button type="button" class="button-category">Fitted Kitchen</button>
+                                <button type="button" class="button-category">Garden</button>
+                                <button type="button" class="button-category">Stepless Access</button>
+                                <button type="button" class="button-category">Suitable for flat sharing</button>
+                                <button type="button" class="button-category">Guest Toilet</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="info-profile h-100">
+                            <div class="profile-header d-flex align-items-center gap-3">
+                                <img src="../../../assets/image/profile/profile-image-3.svg" alt="Profile Image" width="52">
+                                <div class="wrapper d-flex gap-1 flex-column">
+                                    <h6>Yusuf Reigen</h6>
+                                    <p>Klien</p>
+                                </div>
+                            </div>
+                            <div class="profile-data d-flex flex-column gap-3">
+                                <div class="wrapper d-flex align-items-center justify-content-between">
+                                    <p>Tanggal Mulai Sewa</p>
+                                    <p>Dec 1, 2025</p>
+                                </div>
+                                <div class="wrapper d-flex align-items-center justify-content-between">
+                                    <p>No. Telp</p>
+                                    <p>0852264891983</p>
+                                </div>
+                                <div class="wrapper d-flex align-items-center justify-content-between">
+                                    <p>Harga Sewa Perbulan</p>
+                                    <p>IDR 18 JUTA</p>
+                                </div>
+                            </div>
+                            <button type="button" class="button-primary-small d-flex align-items-center gap-2 justify-content-center w-100">
+                                <i class="fa-regular fa-envelope"></i>
+                                Kirim Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END DASHBOARD CONTENT -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.querySelector('.button-login').addEventListener('click', function() {
+            document.querySelector('.button-popup').classList.toggle('active')
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tenancy Living Form Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="mb-5 pb-5">
+    <!-- NAVBAR -->
+    <div class="navbar-tenancy d-flex align-items-center justify-content-between">
+        <a href="../../dashboard-admin/index.html" class="tenancy-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-chevron-left" style="font-size: 0.913rem;"></i>
+            Kembali ke Dashboard
+        </a>
+        <div class="tenancy-image w-100">
+            <img src="../../../assets/image/brand/brand-logo.svg" alt="Brand Logo" height="42">
+        </div>
+    </div>
+    <!-- END NAVBAR -->
+
+
+    <!-- SIDEBAR -->
+    <div class="sidebar-tenancy d-none d-xl-flex flex-column align-items-center justify-content-center gap-2">
+        <button type="button" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-user"></i>
+            Pribadi
+            <i class="fa-solid fa-check" style="width: 100%; text-align: end; color: rgba(112, 101, 240, 1);"></i>
+        </button>
+        <button type="button" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-suitcase"></i>
+            Pekerjaan
+            <i class="fa-solid fa-check" style="width: 100%; text-align: end; color: rgba(112, 101, 240, 1);"></i>
+        </button>
+        <button type="button" class="sidebar-button active w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-house"></i>
+            Tempat Tinggal
+        </button>
+        <button type="button" class="sidebar-button w-100 d-flex align-items-center gap-2">
+            <i class="fa-solid fa-folder-closed"></i>
+            Dokumen
+        </button>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+        <section class="tenancy-form container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="content-header">
+                        <h2 class="title text-center w-100" style="margin-bottom: 6px;">Formulir Permohonan Sewa</h2>
+                        <p class="description text-center">Permohonan ini tidak akan diproses jika tidak diisi secara lengkap dengan melampirkan salinan semua dokumen pendukung.</p>
+                    </div>
+                    <div class="content-form">
+                        <h3 class="form-subtitle">Pengaturan Tempat Tinggal</h3>
+                        <p class="form-description">Diperlukan pengaturan tempat tinggal saat ini dan sebelumnya</p>
+                        <div class="form-content">
+                            <h5 class="content-title mb-3">Detail Tempat Tinggal</h5>
+                            <form class="form row">
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="title">Pengaturan Tempat Tinggal</label>
+                                        <select class="input w-100" id="title">
+                                            <option value="">Pengaturan Tempat Tinggal</option>
+                                            <option value="">Renting from A Real Estate Agent</option>
+                                            <option value="">Renting from A Private Landlord</option>
+                                            <option value="">Home</option>
+                                            <option value="">Renting from A University housing</option>
+                                            <option value="">Living with Family</option>
+                                            <option value="">Staying at temporary accomodation</option>
+                                            <option value="">Staying with a friend</option>
+                                            <option value="">Goverment Community Housing</option>
+                                            <option value="">No fixed address</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="address">Residential Address</label>
+                                        <input type="text" class="input" id="address" placeholder="e.g.  142 Risse Street">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="kota">Kota</label>
+                                        <input type="text" class="input" id="kota" placeholder="e.g. Raytown">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="pos">Kode Pos</label>
+                                        <input type="text" class="input" id="pos" placeholder="e.g. 1011">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="state">State</label>
+                                        <select class="input" id="state">
+                                            <option value="">Pilih Provinsi</option>
+                                            <option value="">Florida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="country">Select Country</label>
+                                        <select class="input" id="country">
+                                            <option value="">Select a country</option>
+                                            <option value="">Tunisia</option>
+                                            <option value="">United Arab Emirates</option>
+                                            <option value="">United Kingdom</option>
+                                            <option value="">United States of America</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" class="input" id="phone" placeholder="e.g. 3222-9000">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="input" id="email" placeholder="contoh@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="rent">Rent Per Week</label>
+                                        <input type="text" class="input" id="rent" placeholder="e.g. 200">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label>Apakah Anda saat ini tinggal di sini?</label>
+                                        <div class="input-radio d-flex gap-3">
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="ya">
+                                                <label for="ya">Ya</label>
+                                            </div>
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="no">
+                                                <label for="no">Tidak</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label>Apakah Anda sedang dalam masa sewa berkala?</label>
+                                        <div class="input-radio d-flex gap-3">
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="ya">
+                                                <label for="ya">Ya</label>
+                                            </div>
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="no">
+                                                <label for="no">Tidak</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="dari">Dari</label>
+                                        <input type="date" class="input" id="dari" placeholder="MM/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="hingga">Hingga</label>
+                                        <input type="date" class="input" id="hingga" placeholder="MM/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="akhir">Tanggal akhir sewa  perjanjian</label>
+                                        <input type="date" class="input" id="akhir" placeholder="MM/YYYY">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label for="alasan">Alasan Pindah</label>
+                                        <select class="input" id="alasan">
+                                            <option value="">Pilih alasan pindah</option>
+                                            <option value="">Landlord Selling</option>
+                                            <option value="">Landlord Increasing Rent</option>
+                                            <option value="">Landlord moving into home</option>
+                                            <option value="">Work Relocation</option>
+                                            <option value="">Need Larger / Smaller Home</option>
+                                            <option value="">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="form-input d-flex flex-column gap-2 w-100">
+                                        <label>Apakah pemeriksaan rutin pernah memerlukan pemeriksaan lanjutan?</label>
+                                        <div class="input-radio d-flex gap-3">
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="ya">
+                                                <label for="ya">Ya</label>
+                                            </div>
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="no">
+                                                <label for="no">Tidak</label>
+                                            </div>
+                                            <div class="form-input d-flex gap-2 align-items-center">
+                                                <input type="radio" id="tidak_yakin">
+                                                <label for="tidak_yakin">Tidak Yakin</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card-checkbox d-flex gap-2 align-items-center">
+                                        <input type="checkbox" id="approve">
+                                        <label for="approve">Saya memberikan wewenang kepada Referee saya untuk merilis semua informasi pribadi saya yang berkaitan dengan aplikasi sewa saya. Saya mengakui bahwa jawaban referensi bersifat rahasia antara agen real estat dan pemberi referensi. <span>Lihat Persyaratan.</span></label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="content-footer">
+                        <a href="../tenancy-document/form.html" class="button-primary text-center" style="width: 300px;">Lanjutkan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Message Page | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="dashboard">
+    <!-- SIDEBAR -->
+    <div class="sidebar d-flex flex-column justify-content-between">
+        <div class="sidebar-header d-flex flex-column gap-4">
+            <div class="header-brand d-flex align-items-center justify-content-between gap-3">
+                <a href="../index.html" class="sidebar-brand w-100">
+                    <span class="brand-logo"></span>
+                </a>
+                <i class="fa-regular fa-circle-left" style="font-size: 1rem; opacity: 0.62;"></i>
+            </div>
+            <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+                <a href="../index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="../submission/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="submission-icon"></span>
+                    <span>Pengajuan</span>
+                </a>
+                <a href="../favorite/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="favorite-icon"></span>
+                    <span>Favorit</span>
+                </a>
+                <a href="empty-state.html" class="sidebar-item active d-flex gap-1 align-items-center">
+                    <span class="message-icon"></span>
+                    <span>Pesan</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+            <a href="../index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="info-icon"></span>
+                <span>Bantuan</span>
+            </a>
+            <a href="../index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="setting-icon"></span>
+                <span>Pengaturan</span>
+            </a>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- TOPBAR -->
+    <div class="topbar d-flex justify-content-between align-items-center">
+        <h4 class="topbar-title">Messages</h4>
+        <div class="topbar-group d-flex gap-3 align-items-center">
+            <hr>
+            <div class="topbar-button topbar-button-login d-none d-lg-flex gap-2 align-items-center position-relative">
+                <button class="button-login d-flex gap-2 align-items-center position-relative">
+                    <img src="../../../assets/image/profile/profile-image.svg" alt="Profile Image" width="32">
+                    Bimabem
+                </button>
+                <div class="button-popup d-flex flex-column gap-2">
+                    <a href="../../dashboard-admin/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                    <a href="../../authentication/login/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- DASHBOARD CONTENT -->
+    <div class="dashboard-content dashboard-content-chat dashboard d-flex">
+        <div class="aside-chat d-flex flex-column">
+            <div class="chat-button d-flex gap-2 justify-content-between align-items-center">
+                <div class="input-search position-relative">
+                    <input type="search" class="topbar-input position-relative" placeholder="Cari Nama...">
+                    <img src="../../../assets/image/icon/search-primary.svg" alt="Search Icon" width="16">
+                </div>
+                <button type="button" class="button-add d-flex align-items-center justify-content-center">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="chat-author w-100 d-flex flex-column">
+                <div class="author-room d-flex align-items-start gap-3">
+                    <img src="../../../assets/image/profile/profile-image-3.svg" alt="Profile Image" width="48">
+                    <div class="room-message">
+                        <div class="wrapper d-flex justify-content-between align-items-center" style="margin-bottom: 4px;">
+                            <h6 class="author-name">Mark Vetrovs</h6>
+                            <p class="author-time">4h ago</p>
+                        </div>
+                        <p class="author-purpose w-100" style="margin-bottom: 4px;">Permintaan Lihat Rumah</p>
+                        <p class="author-message" style="margin-bottom: 12px;">Hi Francis! I’m  in love with one of your properties and wanted to know wh...</p>
+                        <button type="button" class="badge-warning">Permintaan</button>
+                    </div>
+                </div>
+                <div class="author-room d-flex align-items-start gap-3">
+                    <img src="../../../assets/image/profile/profile-image-4.svg" alt="Profile Image" width="48">
+                    <div class="room-message">
+                        <div class="wrapper d-flex justify-content-between align-items-center" style="margin-bottom: 4px;">
+                            <h6 class="author-name">Wilson Septimus</h6>
+                            <p class="author-time">Yesterday</p>
+                        </div>
+                        <p class="author-purpose w-100" style="margin-bottom: 4px;">Pertanyaan Umum</p>
+                        <p class="author-message" style="margin-bottom: 12px;">Hi Francis! I’m  in love with one of your properties and wanted to know wh...</p>
+                        <button type="button" class="badge-primary">Mail</button>
+                    </div>
+                </div>
+                <div class="author-room d-flex align-items-start gap-3">
+                    <img src="../../../assets/image/profile/profile-image-5.svg" alt="Profile Image" width="48">
+                    <div class="room-message">
+                        <div class="wrapper d-flex justify-content-between align-items-center" style="margin-bottom: 4px;">
+                            <h6 class="author-name">Phillip Schleifer</h6>
+                            <p class="author-time">3d ago</p>
+                        </div>
+                        <p class="author-purpose w-100" style="margin-bottom: 4px;">Permintaan Lihat Rumah</p>
+                        <p class="author-message" style="margin-bottom: 12px;">Hi Francis! I’m  in love with one of your properties and wanted to know wh...</p>
+                        <button type="button" class="badge-primary">Mail</button>
+                    </div>
+                </div>
+                <div class="author-room d-flex align-items-start gap-3">
+                    <img src="../../../assets/image/profile/profile-image-6.svg" alt="Profile Image" width="48">
+                    <div class="room-message">
+                        <div class="wrapper d-flex justify-content-between align-items-center" style="margin-bottom: 4px;">
+                            <h6 class="author-name">Desirae Gouse</h6>
+                            <p class="author-time">4h ago</p>
+                        </div>
+                        <p class="author-purpose w-100" style="margin-bottom: 4px;">Tentang Penyewaan</p>
+                        <p class="author-message" style="margin-bottom: 12px;">Hi Francis! I’m  in love with one of your properties and wanted to know wh...</p>
+                        <button type="button" class="badge-warning">Maintenance</button>
+                    </div>
+                </div>
+                <div class="author-room d-flex align-items-start gap-3">
+                    <img src="../../../assets/image/profile/profile-image-7.svg" alt="Profile Image" width="48">
+                    <div class="room-message">
+                        <div class="wrapper d-flex justify-content-between align-items-center" style="margin-bottom: 4px;">
+                            <h6 class="author-name">Emery Siphrom</h6>
+                            <p class="author-time">4h ago</p>
+                        </div>
+                        <p class="author-purpose w-100" style="margin-bottom: 4px;">Tentang Penyewaan</p>
+                        <p class="author-message" style="margin-bottom: 12px;">Hi Francis! I’m  in love with one of your properties and wanted to know wh...</p>
+                        <button type="button" class="badge-warning">Permintaan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content content-room-chat">
+            <div class="chat-header d-flex align-items-center justify-content-between w-100">
+                <div class="wrapper d-flex align-items-center gap-3">
+                    <i class="fa-regular fa-trash-can"></i>
+                    <i class="fa-solid fa-inbox"></i>
+                    <i class="fa-regular fa-circle-question"></i>
+                </div>
+                <div class="wrapper d-flex align-items-center gap-3">
+                    <i class="fa-regular fa-star active"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+            <div class="chat-body d-flex flex-column align-items-end">
+                <div class="chat-message d-flex gap-3 align-items-start">
+                    <img src="../../../assets/image/profile/profile-image-3.svg" alt="Profile Image" width="48">
+                    <div class="wrapper">
+                        <p class="message">Hi Francis,<br>I’m  in love with one of your properties, <span>Beverly Springfield</span> and I would like to ask is it on the market?</p>
+                        <p class="time">13:32 PM</p>
+                    </div>
+                </div>
+                <div class="chat-message chat-message-reverse d-flex gap-3 align-items-start">
+                    <div class="wrapper d-flex flex-column align-items-end">
+                        <p class="message">Hey <span class="tag">@Mark Vetrovs</span> yes, it’s available to rent 🙂</p>
+                        <p class="time">13:40 PM</p>
+                    </div>
+                </div>
+                <div class="chat-message d-flex gap-3 align-items-start w-100">
+                    <img src="../../../assets/image/profile/profile-image-3.svg" alt="Profile Image" width="48">
+                    <div class="wrapper">
+                        <p class="message">May I know your availability for home tour this week?</p>
+                        <p class="time">13:43 PM</p>
+                    </div>
+                </div>
+                <div class="chat-message chat-message-reverse d-flex gap-3 align-items-start">
+                    <div class="wrapper d-flex flex-column align-items-end">
+                        <div class="message">Here is my schedule please choose a time at your convenience. <br>
+                            <span class="message-link d-flex align-items-center gap-2">
+                                <img src="../../../assets/image/icon/date-primary-2.svg" alt="Date Icon" width="40">
+                                <span class="wrapper d-flex flex-column">
+                                    <span>Calendly</span>
+                                    <span>https://calendly.com/francis</span>
+                                </span>
+                            </span>
+                        </div>
+                        <p class="time">Message sent just now</p>
+                    </div>
+                </div>
+                <div class="chat-footer w-100">
+                    <input type="text" class="w-100" placeholder="Ketik pesan anda disini...">
+                    <div class="wrapper w-100 d-flex align-items-center justify-content-between mt-1">
+                        <div class="wrapper d-flex gap-3 align-items-center">
+                            <i class="fa-solid fa-link"></i>
+                            <i class="fa-regular fa-share-from-square"></i>
+                            <i class="fa-solid fa-bold"></i>
+                            <i class="fa-solid fa-italic"></i>
+                        </div>
+                        <button type="button" class="button-primary-small d-flex align-items-end gap-2">
+                            Kirim
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside-detail d-flex flex-column">
+            <img src="../../../assets/image/page-main/property/property-2.jpg" alt="Property Image" class="property-image img-fluid" style="margin-bottom: 24px;">
+            <h6 class="detail-title" style="margin-bottom: 5px;">Rumah Jakal</h6>
+            <p class="detail-description" style="margin-bottom: 12px;">Jakal KM 12, Sleman, Yogyakarta</p>
+            <div class="detail-value d-flex flex-wrap align-items-center" style="margin-bottom: 16px;">
+                <p class="value d-flex align-items-center gap-2 me-3">
+                    <img src="../../../assets/image/icon/bed-primary.svg" alt="Bed Icon" width="16">
+                    4 Kamar Tidur
+                </p>
+                <p class="value d-flex align-items-center gap-2 me-3">
+                    <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                    2 Kamar Mandi
+                </p>
+                <p class="value d-flex align-items-center gap-2">
+                    <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                    6x7.5 m²
+                </p>
+            </div>
+            <div class="detail-property">
+                <p class="property-value d-flex justify-content-between align-items-center gap-2">
+                    Status
+                    <i class="fa-regular fa-circle-check" style="font-size: 0.913rem; width: 100%; text-align: end; color: rgba(39, 174, 96, 1);"></i>
+                    <span style="color: rgba(39, 174, 96, 1);">Aktif</span>
+                </p>
+                <p class="property-value d-flex justify-content-between align-items-center">
+                    Ruang tamu
+                    <span>124 sq ft</span>
+                </p>
+                <p class="property-value d-flex justify-content-between align-items-center">
+                    Kualitas perbaikan
+                    <span>Loteng modern</span>
+                </p>
+                <p class="property-value d-flex justify-content-between align-items-center">
+                    Harga sewa
+                    <span>IDR 12.000.000/ bln</span>
+                </p>
+            </div>
+            <button type="button" class="button-primary-small" style="margin-top: 32px;">Lihat Detail  Properti</button>
+        </div>
+    </div>
+    <!-- END DASHBOARD CONTENT -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.querySelector('.button-login').addEventListener('click', function() {
+            document.querySelector('.button-popup').classList.toggle('active')
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

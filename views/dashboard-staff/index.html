@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Staff | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="dashboard">
+    <!-- SIDEBAR -->
+    <div class="sidebar d-flex flex-column justify-content-between">
+        <div class="sidebar-header d-flex flex-column gap-4">
+            <div class="header-brand d-flex align-items-center justify-content-between gap-3">
+                <a href="../dashboard-staff/index.html" class="sidebar-brand w-100">
+                    <span class="brand-logo"></span>
+                </a>
+                <i class="fa-regular fa-circle-left" style="font-size: 1rem; opacity: 0.62;"></i>
+            </div>
+            <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+                <a href="../dashboard-staff/index.html" class="sidebar-item active d-flex gap-1 align-items-center">
+                    <span class="dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="../dashboard-staff/vacant/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="vacant-icon"></span>
+                    <span>Daftar Properti</span>
+                </a>
+                <a href="../dashboard-staff/tenancy/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="tenancy-icon"></span>
+                    <span>Penyewa / Pembeli</span>
+                </a>
+                <a href="../dashboard-staff/payment/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="payment-icon"></span>
+                    <span>Kelola Pembayaran</span>
+                </a>
+                <a href="../dashboard-staff/message/empty-state.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="message-icon"></span>
+                    <span>Pesan</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+            <a href="../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="info-icon"></span>
+                <span>Bantuan</span>
+            </a>
+            <a href="../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="setting-icon"></span>
+                <span>Pengaturan</span>
+            </a>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- TOPBAR -->
+    <div class="topbar d-flex justify-content-between align-items-center">
+        <h4 class="topbar-title">Beranda</h4>
+        <div class="topbar-group d-flex gap-3 align-items-center">
+            <hr>
+            <div class="topbar-button topbar-button-login d-none d-lg-flex gap-2 align-items-center position-relative">
+                <button class="button-login d-flex gap-2 align-items-center position-relative">
+                    <img src="../../assets/image/profile/profile-image.svg" alt="Profile Image" width="32">
+                    Roy WR
+                </button>
+                <div class="button-popup d-flex flex-column gap-2">
+                    <a href="../dashboard-staff/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                    <a href="../authentication/login/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- DASHBOARD CONTENT -->
+    <div class="dashboard-content dashboard d-flex">
+        <div class="content content-full">
+            <div class="row pb-4">
+                <div class="col-6">
+                    <div class="card-content card-content-summary">
+                        <div class="content-header d-flex align-items-center justify-content-between">
+                            <div class="wrapper">
+                                <h6 class="content-title">Ringkasan tentang Anda</h6>
+                                <p class="content-description">Show overview from Nov 2025 - Dec 2025.</p>
+                            </div>
+                            <button type="button" class="button-date d-flex gap-2 align-items-center">
+                                <i class="fa-regular fa-calendar"></i>
+                                Nov 1 - Dec 31
+                            </button>
+                        </div>
+                        <div class="row mt-4 g-3">
+                            <div class="col-4">
+                                <div class="content-mini">
+                                    <img src="../../assets/image/icon/dashboard-dark.svg" alt="Dashboard Icon" width="52">
+                                    <p>Jumlah Properti</p>
+                                    <h4>8 <span>+21.8%</span></h4>
+                                    <span class="wrapper d-flex align-items-center gap-2">
+                                        <i class="fa-solid fa-house"></i>
+                                        6 Tersedia
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="content-mini text-center">
+                                    <h6>Penyewaan</h6>
+                                    <h4>IDR 18.299.000</h4>
+                                    <p>Diterima Bulan ini</p>
+                                    <hr>
+                                    <h6>Penjualan</h6>
+                                    <h4>IDR 180.299.000</h4>
+                                    <p>Diterima Bulan ini</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card-content card-content-property h-100">
+                        <div class="content-header d-flex align-items-center justify-content-between">
+                            <div class="wrapper-left d-flex align-items-center gap-3">
+                                <img src="../../assets/image/page-main/section-innovation/innovation/property.svg" alt="Property Image" width="62">
+                                <div class="wrapper">
+                                    <h4>8</h4>
+                                    <p>Properties</p>
+                                </div>
+                            </div>
+                            <div class="wrapper-right d-flex flex-column align-items-end">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <span class="wrapper d-flex align-items-center gap-2 mt-3">
+                                    Lihat Semua Properti
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-body d-flex align-items-center justify-content-between">
+                            <div class="wrapper text-center">
+                                <h5>5</h5>
+                                <p>Tersedia</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="wrapper text-center">
+                                <h5>1</h5>
+                                <p>Tersewa</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="wrapper text-center">
+                                <h5>1</h5>
+                                <p>Terjual</p>
+                            </div>
+                            <div class="line"></div>
+                            <div class="wrapper text-center">
+                                <h5>1</h5>
+                                <p>Dinonaktifkan</p>
+                            </div>
+                        </div>
+                        <div class="button-group d-flex gap-2 justify-content-between mt-5">
+                            <a href="index.html" class="button-primary-small d-flex gap-2 align-items-center w-100 justify-content-center">
+                                <i class="fa-solid fa-plus" style="font-size: 0.875rem;"></i>
+                                Tambah Properti
+                            </a>
+                            <a href="index.html" class="button-primary-small d-flex gap-2 align-items-center w-100 justify-content-center">Kelola Pembayaran</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div class="card-content card-content-chart">
+                        <div class="content-header">
+                            <h6>Pembayaran Sewa</h6>
+                            <h3 class="d-flex align-items-center gap-2">IDR 18.299.000 <span>+10.6%</span> <span>dari Nov 2025 - Dec 2025.</span></h3>
+                        </div>
+                        <img src="../../assets/image/dashboard/chart-dashboard.svg" alt="Chart Image" class="img-fluid mt-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END DASHBOARD CONTENT -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.querySelector('.button-login').addEventListener('click', function() {
+            document.querySelector('.button-popup').classList.toggle('active')
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

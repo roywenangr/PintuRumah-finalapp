@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Detail Tenancy Application | Pintu Rumah App</title>
+
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="https://kit.fontawesome.com/e5ccf98c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- END SCRIPT JS -->
+</head>
+<body class="dashboard">
+    <!-- SIDEBAR -->
+    <div class="sidebar d-flex flex-column justify-content-between">
+        <div class="sidebar-header d-flex flex-column gap-4">
+            <div class="header-brand d-flex align-items-center justify-content-between gap-3">
+                <a href="../../dashboard-staff/index.html" class="sidebar-brand w-100">
+                    <span class="brand-logo"></span>
+                </a>
+                <i class="fa-regular fa-circle-left" style="font-size: 1rem; opacity: 0.62;"></i>
+            </div>
+            <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+                <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="dashboard-icon"></span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="../../dashboard-staff/vacant/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="vacant-icon"></span>
+                    <span>Daftar Properti</span>
+                </a>
+                <a href="../../dashboard-staff/tenancy/index.html" class="sidebar-item active d-flex gap-1 align-items-center">
+                    <span class="tenancy-icon"></span>
+                    <span>Penyewa / Pembeli</span>
+                </a>
+                <a href="../../dashboard-staff/payment/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="payment-icon"></span>
+                    <span>Kelola Pembayaran</span>
+                </a>
+                <a href="../../dashboard-staff/message/empty-state.html" class="sidebar-item d-flex gap-1 align-items-center">
+                    <span class="message-icon"></span>
+                    <span>Pesan</span>
+                </a>
+            </div>
+        </div>
+        <div class="link-item d-flex flex-column gap-2 w-100 align-items-center">
+            <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="info-icon"></span>
+                <span>Bantuan</span>
+            </a>
+            <a href="../../dashboard-staff/index.html" class="sidebar-item d-flex gap-1 align-items-center">
+                <span class="setting-icon"></span>
+                <span>Pengaturan</span>
+            </a>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+
+
+    <!-- TOPBAR -->
+    <div class="topbar d-flex justify-content-between align-items-center">
+        <h4 class="topbar-title">Permohonan Pembelian dan Penyewaan</h4>
+        <div class="topbar-group d-flex gap-3 align-items-center">
+            <hr>
+            <div class="topbar-button topbar-button-login d-none d-lg-flex gap-2 align-items-center position-relative">
+                <button class="button-login d-flex gap-2 align-items-center position-relative">
+                    <img src="../../../assets/image/profile/profile-image.svg" alt="Profile Image" width="32">
+                    Roy WR
+                </button>
+                <div class="button-popup d-flex flex-column gap-2">
+                    <a href="../../dashboard-staff/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-house"></i>
+                        Dashboard
+                    </a>
+                    <a href="../../authentication/login/index.html" class="d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOPBAR -->
+
+
+    <!-- DASHBOARD CONTENT -->
+    <div class="dashboard-content dashboard d-flex gap-0 ps-0">
+        <div class="content content-detail-tenancy">
+            <a href="index.html" class="button-redirect d-flex justify-content-center gap-2 align-items-center">
+                <i class="fa-solid fa-chevron-left"></i>
+                Kembali ke Daftar Pengajuan
+            </a>
+            <div class="detail-tenancy">
+                <h5 class="tenancy-title">Rincian Pengajuan</h5>
+                <div class="property-card d-flex align-items-center gap-4">
+                    <img src="../../../assets/image/page-main/property/property-2.jpg" alt="Property Image" class="property-image">
+                    <div class="card-content p-4 ps-0 d-flex flex-column gap-3 w-100">
+                        <div class="wrapper-title d-flex align-items-start justify-content-between w-100">
+                            <div class="wrapper">
+                                <h6>Rumah Jakal</h6>
+                                <p>Jakal KM 12, Sleman, Yogyakarta</p>
+                            </div>
+                            <span class="button-verified d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Diajukan pada 10 November
+                            </span>
+                        </div>
+                        <div class="wrapper-value d-flex align-items-center gap-3 w-100">
+                            <p class="value d-flex align-items-center gap-2">
+                                <img src="../../../assets/image/icon/bed-primary.svg" alt="Bed Icon" width="16">
+                                4 Kamar Tidur
+                            </p>
+                            <p class="value d-flex align-items-center gap-2">
+                                <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                2 Kamar Mandi
+                            </p>
+                            <p class="value d-flex align-items-center gap-2">
+                                <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                6x7.5 m²
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tenancy-data">
+                    <div class="data-top d-flex align-items-center gap-3 justify-content-between">
+                        <div class="data d-flex flex-column">
+                            <p>Total Pendapatan</p>
+                            <p>IDR 18.299.000/bln</p>
+                        </div>
+                        <div class="data d-flex flex-column">
+                            <p>Lama Sewa</p>
+                            <p>1 Bulan</p>
+                        </div>
+                        <div class="data d-flex flex-column">
+                            <p>Penghuni</p>
+                            <p>1 Orang</p>
+                        </div>
+                        <div class="data d-flex flex-column">
+                            <p>Sewa Berakhir</p>
+                            <p>Dec 18, 2025</p>
+                        </div>
+                    </div>
+                    <div class="data-bottom">
+                        <div class="data d-flex flex-column">
+                            <p>Kendaraan</p>
+                            <p>Honda HRV 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="tenancy-client">
+                            <h6 class="tenancy-title">Review Klien</h6>
+                            <p class="client-description">“ Dia selalu membayar sewa tepat waktu ”</p>
+                            <div class="client-profile d-flex align-items-center gap-3 mt-3">
+                                <img src="../../../assets/image/profile/profile-image-5.svg" alt="Profile Image" width="42">
+                                <div class="profile-content">
+                                    <h6 class="d-flex align-items-center gap-2">
+                                        Mario
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <span>Identitas Diverifikasi</span>
+                                    </h6>
+                                    <p>mariogarcia@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="tenancy-property">
+                            <h6 class="tenancy-title">Properti</h6>
+                            <div class="property-data d-flex align-items-start gap-3 mt-3">
+                                <img src="../../../assets/image/icon/submission.svg" alt="Submission Image" width="48">
+                                <div class="data-content d-flex flex-column w-100">
+                                    <h6>Rumah Jalan</h6>
+                                    <p>IDR 18.299.000 / Bulan</p>
+                                    <div class="data-value d-flex align-items-center gap-3">
+                                        <p class="value d-flex align-items-center gap-2">
+                                            <img src="../../../assets/image/icon/bed-primary.svg" alt="Bed Icon" width="16">
+                                            4
+                                        </p>
+                                        <p class="value d-flex align-items-center gap-2">
+                                            <img src="../../../assets/image/icon/bathroom-primary.svg" alt="Bathroom Icon" width="16">
+                                            2
+                                        </p>
+                                        <p class="value d-flex align-items-center gap-2">
+                                            <img src="../../../assets/image/icon/size-primary.svg" alt="Size Icon" width="16">
+                                            6x7.5 m²
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12" style="margin-top: 24px;">
+                        <div class="tenancy-skor">
+                            <h6 class="tenancy-title">Rincian Skor</h6>
+                            <div class="skor-data d-flex align-items-start gap-3 mt-3">
+                                <div class="data-graph d-flex align-items-center gap-2 w-100">
+                                    <button type="button" class="button-graph"></button>
+                                    <button type="button" class="button-graph"></button>
+                                    <button type="button" class="button-graph"></button>
+                                    <button type="button" class="button-graph"></button>
+                                    <button type="button" class="button-graph"></button>
+                                </div>
+                            </div>
+                            <div class="skor-caption d-flex align-items-center justify-content-between mt-2">
+                                <p>300</p>
+                                <p>850</p>
+                            </div>
+                            <h6 class="tenancy-title mt-4">Laporan</h6>
+                            <div class="tenancy-report d-flex align-items-center gap-3">
+                                <div class="report-data w-100">
+                                    <p>Pembayaran Tepat Waktu</p>
+                                    <h6 class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/icon/time-dark-blur.svg" alt="Time Icon" width="20">
+                                        100%
+                                    </h6>
+                                </div>
+                                <div class="report-data w-100">
+                                    <p>Estimasi Pembayaran setiap Bulan</p>
+                                    <h6 class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/icon/income-dark-blur.svg" alt="Income Icon" width="20">
+                                        IDR 18.299.000
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="tenancy-report d-flex align-items-center gap-3 mt-3">
+                                <div class="report-data w-100">
+                                    <p>Lama Bergabung</p>
+                                    <h6 class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/icon/since-dark-blur.svg" alt="Since Icon" width="20">
+                                        4 Tahun
+                                    </h6>
+                                </div>
+                                <div class="report-data w-100">
+                                    <p>Total Pengeluaran</p>
+                                    <h6 class="d-flex align-items-center gap-2">
+                                        <img src="../../../assets/image/icon/outcome-dark-blur.svg" alt="Income Icon" width="20">
+                                        IDR 89.421.000
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aside-notification aside-profile-client d-flex flex-column">
+            <div class="button-group d-flex gap-2">
+                <a href="../vacant/detail.html" class="button-primary-small w-100 justify-content-center d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-check"></i>
+                    Terima
+                </a>
+                <a href="../vacant/detail.html" class="button-danger-small w-100 justify-content-center d-flex gap-2 align-items-center">
+                    <i class="fa-solid fa-xmark"></i>
+                    Tolak
+                </a>
+            </div>
+            <div class="content-profile d-flex flex-column align-items-center" style="margin-top: 24px;">
+                <div class="profile-content d-flex flex-column align-items-center text-center">
+                    <img src="../../../assets/image/profile/profile-image-2.svg" alt="Profile Image" class="profile-image">
+                    <h6>Giovanni Schleifer</h6>
+                    <p>Houston, TX</p>
+                </div>
+                <div class="profile-nik d-flex justify-content-between align-items-center w-100">
+                    <div class="wrapper d-flex gap-2 align-items-center">
+                        <p>518</p>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                    </div>
+                    <button type="button">Lihat NIK</button>
+                </div>
+                <div class="profile-data d-flex justify-content-between align-items-center w-100">
+                    <p>Tanggal Lahir</p>
+                    <p>09-05-1985</p>
+                </div>
+                <div class="profile-data d-flex justify-content-between align-items-center w-100">
+                    <p>Umur</p>
+                    <p>36 tahun</p>
+                </div>
+                <div class="profile-data d-flex justify-content-between align-items-center w-100">
+                    <p>Email</p>
+                    <p>manuelvilla@gmail.com</p>
+                </div>
+                <div class="profile-data d-flex justify-content-between align-items-center w-100" style="border-bottom: 1px solid rgba(var(--dark-color), 0.12);">
+                    <p>Nomor Telepon</p>
+                    <p>202-555-0159</p>
+                </div>
+                <button type="button" class="button-primary-small w-100 d-flex align-items-center justify-content-center gap-2" style="margin-top: 24px;">
+                    <i class="fa-regular fa-envelope"></i>
+                    Kirim Email
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- END DASHBOARD CONTENT -->
+
+
+    <!-- SCRIPT JS -->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+
+        document.querySelector('.button-login').addEventListener('click', function() {
+            document.querySelector('.button-popup').classList.toggle('active')
+        })
+    </script>
+    <!-- END SCRIPT JS -->
+</body>
+</html>

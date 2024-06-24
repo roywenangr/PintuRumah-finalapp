@@ -1,0 +1,88 @@
+@media (max-width: 1399.98px) {
+    section.auth .auth-content {
+        padding: 0 160px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .headline {
+        font-size: 3rem;
+        margin-top: 32px;
+    }
+
+    section.innovation .description {
+        width: 70%;
+    }
+
+    section.auth .auth-content {
+        padding: 0 120px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .content-gap {
+        padding-top: 42px;
+    }
+
+    .headline {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    section.innovation {
+        padding: 32px;
+    }
+
+    section.innovation .description {
+        width: 80%;
+    }
+
+    section.cta p {
+        width: 100%;
+    }
+
+    section.detail-property .scroll-button {
+        overflow: auto;
+        width: 100%;
+    }
+
+    section.detail-property .button-group-title {
+        width: 100%;
+    }
+
+    section.detail-property .button-group-title a {
+        width: fit-content;
+        text-wrap: nowrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .headline {
+        font-size: 3rem;
+        margin-top: 62px;
+    }
+
+    section.innovation .description {
+        width: 100%;
+    }
+
+    section.property .search-input,
+    section.property .search-input input,
+    section.property .button-wrapper {
+        width: 100%;
+    }
+
+    section.cta .wrapper,
+    section.cta .wrapper input {
+        width: 100%;
+    }
+
+    section.auth .auth-content {
+        padding: 0 32px;
+        padding-top: 24px;
+    }
+
+    .navbar-tenancy {
+        padding: 0 32px;
+    }
+}
